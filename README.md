@@ -8,6 +8,19 @@ Open H2 data base on Browser:
 http://localhost:9091/h2 
 required password from properties file.
 
+# How to create Jar
+First install gradle from this command: #apt get install gradle
+
+Now you can run this command: #./gradlew build 
+
+If JAVA_HOME path is not set
+use this command: export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
+Then #export PATH=$JAVA_HOME/bin:$PATH
+
+ 
+
+
 # How to create Docker image
 First install docker in your system
 - Goto the terminal run - #docker build .
