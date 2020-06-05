@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/validatorpoc.iml" filepath="$PROJECT_DIR$/.idea/modules/validatorpoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/validatorpoc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/validatorpoc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/validatorpoc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/validatorpoc.test.iml" />
+    </modules>
+  </component>
+</project>

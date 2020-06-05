@@ -11,27 +11,27 @@ import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired(required = true)
-    private UserRepository userRepository;
+  @Autowired(required = true)
+  private UserRepository userRepository;
 
-    public void UserServiceImpl(UserRepository repository){
-        this.userRepository = repository;
-    }
+  public void UserServiceImpl(UserRepository repository) {
+    this.userRepository = repository;
+  }
 
-    @Override
-    public List<UserDetailModel> retrieveUsers() {
-         List<UserDetailModel> user = userRepository.findAll();;
-    return user;
-    }
+  @Override
+  public List<UserDetailModel> retrieveUsers() {
+    List<UserDetailModel> user = userRepository.findAll();
+      return user;
+  }
 
-    @Override
-    public UserDetailModel getUser(Long id) {
-        Optional<UserDetailModel> user = userRepository.findById(id);
-        return user.get();
-    }
+  @Override
+  public UserDetailModel getUser(Long id) {
+    Optional<UserDetailModel> user = userRepository.findById(id);
+    return user.get();
+  }
 
-    @Override
-    public UserDetailModel saveUser(UserDetailModel user) {
-       return userRepository.save(user);
-    }
+  @Override
+  public UserDetailModel saveUser(UserDetailModel user) {
+    return userRepository.save(user);
+  }
 }
